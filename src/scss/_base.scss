@@ -1,0 +1,48 @@
+body {
+  font-family: Raleway, sans-serif;
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style-type: none;
+
+    @media screen and (max-width: 600px) {
+      visibility: hidden;
+    }
+  }
+
+  button {
+    color: $base-font-color;
+    background: #ff4343;
+    width: 370px;
+    height: 80px;
+    border: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+
+    &:hover {
+      background: #c03131;
+    }
+
+    &:active {
+      background: #ff4343;
+      box-shadow: 4px 4px 30px #ff4343;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 313px;
+      height: 78px;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 279px;
+      height: 58px;
+    }
+  }
+}
